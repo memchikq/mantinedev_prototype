@@ -1,10 +1,11 @@
-import { NavLink, Text } from "@mantine/core"
+import { NavLink, Space, Text } from "@mantine/core"
 import "./UserMenu.css"
 import { Link, useNavigate } from "react-router-dom"
 import { IoLogoUsd } from "react-icons/io"
 import { CiUmbrella } from "react-icons/ci"
 import { MdOutlineSecurity } from "react-icons/md"
 import { GoGraph } from "react-icons/go"
+import { FaPlus } from "react-icons/fa"
 
 const UserMenu = () => {
   const navigate = useNavigate()
@@ -14,9 +15,9 @@ const UserMenu = () => {
       <NavLink label={<Text size="16px">Insurance</Text>} leftSection={<CiUmbrella />} />
       <NavLink label={<Text size="16px">Smart contracts</Text>} leftSection={<MdOutlineSecurity />} />
       <NavLink label={<Text size="16px">Salaries</Text>} leftSection={<GoGraph />} />
-      <Link to={"/new-product"}>
-        <Text>+ Add new products</Text>
-      </Link>
+      <Space h="xl"/>
+      <NavLink onClick={()=> navigate("/new-product")} label={<Text size="16px">New products</Text>} leftSection={<FaPlus />} />
+      
     </div>
   )
 }

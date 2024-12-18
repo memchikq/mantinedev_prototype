@@ -10,7 +10,7 @@ const AddNewProduct = () => {
       <Flex gap={"100px"} mt={40}>
         <UserMenu />
         <Flex flex={1} direction={"column"} align={"center"} gap={"md"}>
-          <Paper w={"100%"} shadow="sm" radius={"md"} withBorder>
+          <Paper className="bg_img" w={"100%"} shadow="sm" radius={"md"} withBorder>
             <Flex
               p={"md"}
               style={{ width: "100%", height: "190px" }}

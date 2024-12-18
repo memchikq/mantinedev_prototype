@@ -32,16 +32,19 @@ const data = [
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
+        linkLabelSecond:"Adjust security and privacy settings"
       },
       {
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
+        linkLabelSecond:"Adjust security and privacy settings"
       },
       {
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
+        linkLabelSecond:"Adjust security and privacy settings"
       },
     ],
   },
@@ -53,16 +56,19 @@ const data = [
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
+        linkLabelSecond:"Adjust security and privacy settings"
       },
       {
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
+        linkLabelSecond:"Adjust security and privacy settings"
       },
       {
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
+        linkLabelSecond:"Adjust security and privacy settings"
       },
     ],
   },
@@ -70,20 +76,24 @@ const data = [
 const Profile = () => {
   const [active, setActive] = useState("Billing")
 
-  const links = data.map((item) => (
+  const links = data.map((item,i) => (
     <div
-      key={item.label}
+      key={i}
       onClick={(event) => {
         event.preventDefault()
         setActive(item.label)
       }}
     >
-      <Title order={4} style={{textTransform:"uppercase"}} size="xl">{item.label}</Title>
+      <Title order={5} style={{textTransform:"uppercase"}} size="xl">{item.label}</Title>
 
       {item.links.map((v, i) => (
         <NavLink
           key={i}
-          label={<Text size="md">{v.linkLabel}</Text>}
+          label={<Flex direction={"column"}>
+            <Text size="md">{v.linkLabel}</Text>
+            {v.linkLabelSecond ? <Text size="md">{v.linkLabelSecond}</Text>:""}
+            
+          </Flex>}
           className={classes.link}
           rightSection={<FaChevronRight />}
           leftSection={<v.icon className={classes.linkIcon} />}
@@ -100,8 +110,8 @@ const Profile = () => {
 
         <Flex flex={1} justify={"center"} gap={"md"}>
           <Flex flex={1} direction={"column"} gap={"md"} align={"center"}>
-            <Paper shadow="sm" radius="md" withBorder>
-            <BackgroundImage src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png" radius="sm">
+            <Paper className="bg_img" shadow="sm" radius="md" withBorder>
+            
               <Flex
                 direction={"column"}
                 justify={"center"}
@@ -114,11 +124,11 @@ const Profile = () => {
                 }}
               >
                 <Avatar size={"xl"} src={"/icons/user.png"} />
-                <Text size="xl">Ruslan Bakiev</Text>
+                <Text size="md">Ruslan Bakiev</Text>
               </Flex>
-              </BackgroundImage>
+              
             </Paper>
-            <Text>User identificator: P81209445</Text>
+            <Text size="md">User identificator: P81209445</Text>
             <Button size="xl" variant="outline">
               Logout
             </Button>

@@ -1,4 +1,4 @@
-import { Avatar, Button, Container, Flex, NavLink, Paper, Stepper, Text, Title } from "@mantine/core"
+import { Avatar, Button, Container, Divider, Flex, NavLink, Paper, Stepper, Text, Title } from "@mantine/core"
 import Header from "../../Components/Headers/Header"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 import { FaChevronRight, FaCloudDownloadAlt, FaQuestion } from "react-icons/fa"
@@ -23,47 +23,27 @@ const Transfer = () => {
 
             <Flex flex={1} direction={"column"} justify={"center"}>
               <Flex flex={1} justify={"center"} gap={"xl"}>
-                <Flex flex={1} pos={"relative"} direction={"column"} gap={"sm"}>
+                <Flex flex={1} pos={"relative"} direction={"column"}>
                   <Paper shadow="sm" radius={"md"} withBorder>
                     <Flex p={"md"} gap={"sm"} direction={"column"}>
-                      <Title order={4} style={{ textTransform: "uppercase" }} size="xl">
+                      <Title order={5} style={{ textTransform: "uppercase" }}>
                         Sender
                       </Title>
                       <Text size="xl">RUSLAN BAKIEV</Text>
-                      <Flex gap={"sm"}>
-                        <Text size="xl">5'000 USD</Text>
+                      <Flex gap={"sm"} align={"center"}>
+                        <Text fw={600} size="md">5'000 USD</Text>
                         <img src="/icons/usa-flag.png" />
                       </Flex>
                       <Text>Sending from individual bank account in Russia</Text>
-                      <div style={{ display: "flex", justifyContent: "center", zIndex: 30 }}>
-                        <div
-                          style={{
-                            borderRadius: "100%",
-                            position: "absolute",
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            width: "30px",
-                            height: "30px",
-                            border: "2px solid black",
-                            transform: "translateY(5px)",
-                            background: "white",
-                            zIndex: 30,
-                          }}
-                        >
-                          <AiOutlineDown />
-                        </div>
-                      </div>
                     </Flex>
-                  </Paper>
-                  <Paper shadow="sm" radius={"md"} withBorder>
+                    <Divider />
                     <Flex p={"md"} gap={"sm"} direction={"column"}>
-                      <Title order={4} style={{ textTransform: "uppercase" }} size="xl">
+                      <Title order={5} style={{ textTransform: "uppercase" }}>
                         Receiver
                       </Title>
-                      <Text size="xl">RUSLAN BAKIEV</Text>
-                      <Flex gap={"sm"}>
-                        <Text size="xl">5'000 USD</Text>
+                      <Text size="md">RUSLAN BAKIEV</Text>
+                      <Flex gap={"sm"} align={"center"}>
+                        <Text fw={600} size="md">5'000 USD</Text>
                         <img src="/icons/usa-flag.png" />
                       </Flex>
                       <Text>Sending from individual bank account in Russia</Text>
@@ -82,7 +62,7 @@ const Transfer = () => {
               </Flex>
               <Flex mt={"xl"}>
                 <Flex flex={2.5} direction={"column"} align={"flex-end"}></Flex>
-                <Flex  w={335} direction={"column"} gap={"md"}>
+                <Flex w={335} direction={"column"} gap={"md"}>
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
                       <NavLink

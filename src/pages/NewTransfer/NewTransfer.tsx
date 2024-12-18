@@ -1,4 +1,4 @@
-import { Alert, Box, Button, Container, Flex, Image, Input, Stepper, Text } from "@mantine/core"
+import { Alert, Box, Button, Container, Flex, Image, Input, NativeSelect, Select, Stepper, Text, TextInput } from "@mantine/core"
 import Header from "../../Components/Headers/Header"
 
 import UserMenu from "../../Components/UserMenu/UserMenu"
@@ -25,40 +25,66 @@ const NewTransfer = () => {
               <Flex w={"60%"} direction={"column"} gap={"lg"}>
                 <Flex direction={"column"}>
                   <Text size="xl">Sending from Russia</Text>
-                  <Input
+                  <TextInput
                     size="xl"
                     rightSection={
-                      <Flex pr={"md"} direction={"row-reverse"} align={"center"} miw={"10px"} gap={"md"}>
-                        <Text size="xl" style={{ whiteSpace: "nowrap" }}>
-                          RUB <AiOutlineDown />
-                        </Text>
-                        <img style={{ objectFit: "scale-down" }} src="/icons/ru-flag.png" />
-                        <Text size="xl">200'000</Text>
-                      </Flex>
+                      <Select
+                        data={["USD", "EUR"]}
+                        size="xl"
+                        rightSectionWidth={18}
+                        styles={{
+                          input: {
+                            fontWeight: 500,
+                            borderTopLeftRadius: 0,
+                            borderBottomLeftRadius: 0,
+                            whiteSpace: "nowrap",
+                            overflow: "visible",
+                            width: "90px",
+                          },
+                          dropdown: {
+                            overflow: "auto",
+                            width: "300px",
+                            minWidth: "max-content",
+                          },
+                        }}
+                      />
                     }
                   />
                 </Flex>
                 <Flex direction={"column"}>
                   <Text size="xl">Receiving in Turkey</Text>
-                  <Input
+                  <TextInput
                     size="xl"
                     rightSection={
-                      <Flex pr={"md"} direction={"row-reverse"} align={"center"} miw={"10px"} gap={"md"}>
-                        <Text size="xl" style={{ whiteSpace: "nowrap" }}>
-                          TRY <AiOutlineDown />
-                        </Text>
-                        <img style={{ objectFit: "scale-down" }} src="/icons/turkey-flag.png" />
-                        <Text size="xl">6'000</Text>
-                      </Flex>
+                      <Select
+                        data={["USD", "EUR"]}
+                        size="xl"
+                        rightSectionWidth={18}
+                        styles={{
+                          input: {
+                            fontWeight: 500,
+                            borderTopLeftRadius: 0,
+                            borderBottomLeftRadius: 0,
+                            whiteSpace: "nowrap",
+                            overflow: "visible",
+                            width: "90px",
+                          },
+                          dropdown: {
+                            overflow: "auto",
+                            width: "300px",
+                            minWidth: "max-content",
+                          },
+                        }}
+                      />
                     }
                   />
                 </Flex>
                 <Alert variant="light" color="blue" title="Alert title" icon={<CiCircleInfo />}>
-                Because of current regulations, we can't send money to this country right now. We'll let you know if this changes.
+                  Because of current regulations, we can't send money to this country right now. We'll let you know if this changes.
                 </Alert>
                 <Text ta={"center"}>I agree with terms and conditions</Text>
                 <Flex justify={"center"}>
-                  <Button px={"100px"} size="xl" >
+                  <Button px={"100px"} size="xl">
                     Continue
                   </Button>
                 </Flex>
