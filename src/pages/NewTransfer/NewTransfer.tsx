@@ -5,11 +5,14 @@ import {
   Flex,
   Image,
   Input,
+  Stepper,
   Text,
 } from "@mantine/core";
 import Header from "../../Components/Headers/Header";
 
 import UserMenu from "../../Components/UserMenu/UserMenu";
+import { BsArrowDown } from "react-icons/bs";
+import { AiOutlineDown } from "react-icons/ai";
 const NewTransfer = () => {
   return (
     <Container size={"90%"} style={{ padding: "8px" }}>
@@ -20,61 +23,12 @@ const NewTransfer = () => {
 
         <Flex justify={"center"} flex={1}>
           <Flex flex={1} direction={"column"} gap={"xl"}>
-            <nav>
-              <ul
-                style={{
-                  display: "flex",
-                  justifyContent: "space-evenly",
-                  gap: "100px",
-                  fontSize: "19px",
-                }}
-              >
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    flex: 1,
-                    justifyContent: "space-around",
-                  }}
-                >
-                  <Text size="xl">Amount</Text>
-                  <Text size="xl">ᐳ</Text>
-                </li>
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    flex: 1,
-                    justifyContent: "space-around",
-                  }}
-                >
-                  <Text size="xl">Receiver detail</Text>
-                  <Text size="xl">ᐳ</Text>
-                </li>
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    flex: 1,
-                    justifyContent: "space-around",
-                  }}
-                >
-                  <Text size="xl">Review</Text>
-                  <Text size="xl">ᐳ</Text>
-                </li>
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    flex: 1,
-                    justifyContent: "space-around",
-                  }}
-                >
-                  <Text size="xl">Pay</Text>
-                  <Text size="xl">ᐳ</Text>
-                </li>
-              </ul>
-            </nav>
+            <Stepper active={1}>
+              <Stepper.Step label="Amount"></Stepper.Step>
+              <Stepper.Step label="Receiver detail"></Stepper.Step>
+              <Stepper.Step label="Review "></Stepper.Step>
+              <Stepper.Step label="Pay"></Stepper.Step>
+            </Stepper>
             <Flex direction={"column"} align={"center"} gap={"lg"}>
               <Flex w={"60%"} direction={"column"} gap={"lg"}>
                 <Flex direction={"column"}>
@@ -90,11 +44,11 @@ const NewTransfer = () => {
                         gap={"md"}
                       >
                         <Text size="xl" style={{ whiteSpace: "nowrap" }}>
-                          RUB ᐯ
+                          RUB <AiOutlineDown />
                         </Text>
                         <img
                           style={{ objectFit: "scale-down" }}
-                          src="/icons/flag.png"
+                          src="/icons/ru-flag.png"
                         />
                         <Text size="xl">200'000</Text>
                       </Flex>
@@ -114,11 +68,11 @@ const NewTransfer = () => {
                         gap={"md"}
                       >
                         <Text size="xl" style={{ whiteSpace: "nowrap" }}>
-                          TRY ᐯ
+                          TRY <AiOutlineDown />
                         </Text>
                         <img
                           style={{ objectFit: "scale-down" }}
-                          src="/icons/flag.png"
+                          src="/icons/turkey-flag.png"
                         />
                         <Text size="xl">6'000</Text>
                       </Flex>
@@ -126,7 +80,7 @@ const NewTransfer = () => {
                   />
                 </Flex>
                 <Flex
-                  style={{ border: "1px solid black" }}
+                  style={{ border: "1px solid black",borderRadius:"8px" }}
                   p={"sm"}
                   mt={"xl"}
                   gap={"md"}
@@ -140,7 +94,7 @@ const NewTransfer = () => {
                 </Flex>
                 <Text ta={"center"}>I agree with terms and conditions</Text>
                 <Flex justify={"center"}>
-                  <Button px={"100px"} color="gray" size="lg" variant="outline">
+                  <Button px={"100px"} color="gray" size="xl" variant="outline">
                     Continue
                   </Button>
                 </Flex>

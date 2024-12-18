@@ -10,16 +10,20 @@ const AddNewProduct = () => {
       <Flex gap={"100px"} mt={40}>
         <UserMenu />
         <Flex flex={1} direction={"column"} align={"center"} gap={"md"}>
-          <Flex
+
+          <Flex 
+          
             p={"md"}
-            style={{ border: "1px solid black", width: "100%",height:"190px" }}
+            style={{  width: "100%",height:"190px",borderRadius:"8px",fontWeight:"bold" }}
+            // bg={"#9fe870"}
+            bd={"1px solid black"}
             direction={"column"}
             gap={"md"}
             justify={"end"}
             align={"start"}
           >
-            <Text size="30px">Products</Text>
-            <Text size="xl" maw={"50%"}>
+            <Text size="30px" fw={555}>Products</Text>
+            <Text fw={500}  size="xl" maw={"50%"}>
               Use all the possibilities of our products to make your business
               more efficient and profitable
             </Text>
@@ -29,7 +33,7 @@ const AddNewProduct = () => {
             w={"100%"}
             gap={"md"}
           >
-            <Flex style={{border: "1px solid black"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
+            <Flex style={{border: "1px solid black",borderRadius:"8px"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
               <Text ta={"center"} size="30px">
                 Insurance
               </Text>
@@ -47,7 +51,7 @@ const AddNewProduct = () => {
                 Add service
               </Text>
             </Flex>
-            <Flex style={{border: "1px solid black"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
+            <Flex style={{border: "1px solid black",borderRadius:"8px"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
               <Text ta={"center"} size="30px">
                 Insurance
               </Text>
@@ -65,7 +69,7 @@ const AddNewProduct = () => {
                 Add service
               </Text>
             </Flex>
-            <Flex style={{border: "1px solid black"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
+            <Flex style={{border: "1px solid black",borderRadius:"8px"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
               <Text ta={"center"} size="30px">
                 Insurance
               </Text>

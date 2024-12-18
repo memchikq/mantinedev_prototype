@@ -1,6 +1,9 @@
-import { Avatar, Button, Container, Flex, Text, Title } from "@mantine/core";
-import Header from "../../Components/Headers/Header";
-import UserMenu from "../../Components/UserMenu/UserMenu";
+import { Avatar, Button, Container, Flex, Text, Title } from "@mantine/core"
+import Header from "../../Components/Headers/Header"
+import UserMenu from "../../Components/UserMenu/UserMenu"
+import { IoIosNotifications } from "react-icons/io"
+import { FaChevronRight, FaQuestion } from "react-icons/fa"
+import { CiLock } from "react-icons/ci"
 
 const Profile = () => {
   return (
@@ -10,7 +13,7 @@ const Profile = () => {
       <Flex gap={"100px"} mt={40}>
         <UserMenu />
 
-        <Flex  flex={1} justify={"center"} gap={"md"}>
+        <Flex flex={1} justify={"center"} gap={"md"}>
           <Flex flex={1} direction={"column"} gap={"md"} align={"center"}>
             <Flex
               direction={"column"}
@@ -22,6 +25,7 @@ const Profile = () => {
                 width: "400px",
                 height: "200px",
                 border: "1px solid black",
+                borderRadius:"8px"
               }}
             >
               <Avatar size={"xl"} src={"/icons/user.png"} />
@@ -29,7 +33,7 @@ const Profile = () => {
             </Flex>
 
             <Text>User identificator: P81209445</Text>
-            <Button size="lg" variant="outline" color="gray">
+            <Button size="xl" variant="outline" color="gray">
               Logout
             </Button>
           </Flex>
@@ -38,148 +42,193 @@ const Profile = () => {
               <Text size="30px">Quick access</Text>
               <Flex justify={"space-between"} align={"center"}>
                 <Flex gap={"md"} align={"center"} flex={1}>
-                  <img
+                  <Flex
+                    justify={"center"}
+                    align={"center"}
                     style={{
                       padding: "2px",
+                      width: "40px",
+                      height: "40px",
                       border: "1px solid black",
                       borderRadius: "100%",
+                      
                     }}
-                    src="/icons/notification.png"
-                  />
+                  >
+                    <IoIosNotifications size={20} />
+                  </Flex>
                   <Text size="26px">Notifications</Text>
                 </Flex>
-                <Text>ᐳ</Text>
+                <FaChevronRight />
               </Flex>
               <Flex justify={"space-between"} align={"center"}>
                 <Flex gap={"md"} align={"center"} flex={1}>
-                  <img
+                  <Flex
+                    justify={"center"}
+                    align={"center"}
                     style={{
                       padding: "2px",
+                      width: "40px",
+                      height: "40px",
                       border: "1px solid black",
                       borderRadius: "100%",
+                      
                     }}
-                    src="/icons/faq.png"
-                  />
+                  >
+                    <FaQuestion />
+                  </Flex>
                   <Text size="26px">Help and FAQ's</Text>
                 </Flex>
-                <Text>ᐳ</Text>
+                <FaChevronRight />
               </Flex>
             </Flex>
             <Flex direction={"column"} gap={"lg"}>
               <Text size="30px">Settings</Text>
               <Flex justify={"space-between"} align={"center"}>
                 <Flex gap={"md"} align={"center"} flex={1}>
-                  <img
+                  <Flex
+                    justify={"center"}
+                    align={"center"}
                     style={{
                       padding: "2px",
+                      width: "40px",
+                      height: "40px",
                       border: "1px solid black",
                       borderRadius: "100%",
                     }}
-                    src="/icons/lock.png"
-                  />
+                  >
+                    <CiLock size={20} />
+                  </Flex>
                   <Flex direction={"column"}>
                     <Text size="26px">Security and privacy</Text>
                     <Text size="20px">Adjust security and privacy settings.</Text>
                   </Flex>
                 </Flex>
-                <Text>ᐳ</Text>
+                <FaChevronRight />
               </Flex>
               <Flex justify={"space-between"} align={"center"}>
                 <Flex gap={"md"} align={"center"} flex={1}>
-                  <img
+                  <Flex
+                    justify={"center"}
+                    align={"center"}
                     style={{
                       padding: "2px",
+                      width: "40px",
+                      height: "40px",
                       border: "1px solid black",
                       borderRadius: "100%",
                     }}
-                    src="/icons/lock.png"
-                  />
+                  >
+                    <CiLock size={20} />
+                  </Flex>
                   <Flex direction={"column"}>
                     <Text size="26px">Security and privacy</Text>
                     <Text size="20px">Adjust security and privacy settings.</Text>
                   </Flex>
                 </Flex>
-                <Text>ᐳ</Text>
+                <FaChevronRight />
               </Flex>
               <Flex justify={"space-between"} align={"center"}>
                 <Flex gap={"md"} align={"center"} flex={1}>
-                  <img
+                  <Flex
+                    justify={"center"}
+                    align={"center"}
                     style={{
                       padding: "2px",
+                      width: "40px",
+                      height: "40px",
                       border: "1px solid black",
                       borderRadius: "100%",
                     }}
-                    src="/icons/lock.png"
-                  />
+                  >
+                    <CiLock size={20} />
+                  </Flex>
                   <Flex direction={"column"}>
                     <Text size="26px">Security and privacy</Text>
                     <Text size="20px">Adjust security and privacy settings.</Text>
                   </Flex>
                 </Flex>
-                <Text>ᐳ</Text>
+                <FaChevronRight />
               </Flex>
-             
+
+              
             </Flex>
             <Flex direction={"column"} gap={"lg"}>
               <Text size="30px">Settings</Text>
               <Flex justify={"space-between"} align={"center"}>
                 <Flex gap={"md"} align={"center"} flex={1}>
-                  <img
+                  <Flex
+                    justify={"center"}
+                    align={"center"}
                     style={{
                       padding: "2px",
+                      width: "40px",
+                      height: "40px",
                       border: "1px solid black",
                       borderRadius: "100%",
                     }}
-                    src="/icons/lock.png"
-                  />
+                  >
+                    <CiLock size={20} />
+                  </Flex>
                   <Flex direction={"column"}>
                     <Text size="26px">Security and privacy</Text>
                     <Text size="20px">Adjust security and privacy settings.</Text>
                   </Flex>
                 </Flex>
-                <Text>ᐳ</Text>
+                <FaChevronRight />
               </Flex>
               <Flex justify={"space-between"} align={"center"}>
                 <Flex gap={"md"} align={"center"} flex={1}>
-                  <img
+                  <Flex
+                    justify={"center"}
+                    align={"center"}
                     style={{
                       padding: "2px",
+                      width: "40px",
+                      height: "40px",
                       border: "1px solid black",
                       borderRadius: "100%",
                     }}
-                    src="/icons/lock.png"
-                  />
+                  >
+                    <CiLock size={20} />
+                  </Flex>
                   <Flex direction={"column"}>
                     <Text size="26px">Security and privacy</Text>
                     <Text size="20px">Adjust security and privacy settings.</Text>
                   </Flex>
                 </Flex>
-                <Text>ᐳ</Text>
+                <FaChevronRight />
               </Flex>
               <Flex justify={"space-between"} align={"center"}>
                 <Flex gap={"md"} align={"center"} flex={1}>
-                  <img
+                  <Flex
+                    justify={"center"}
+                    align={"center"}
                     style={{
                       padding: "2px",
+                      width: "40px",
+                      height: "40px",
                       border: "1px solid black",
                       borderRadius: "100%",
                     }}
-                    src="/icons/lock.png"
-                  />
+                  >
+                    <CiLock size={20} />
+                  </Flex>
                   <Flex direction={"column"}>
                     <Text size="26px">Security and privacy</Text>
                     <Text size="20px">Adjust security and privacy settings.</Text>
                   </Flex>
                 </Flex>
-                <Text>ᐳ</Text>
+                <FaChevronRight />
               </Flex>
-             
+
+              
             </Flex>
+          
           </Flex>
         </Flex>
       </Flex>
     </Container>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile

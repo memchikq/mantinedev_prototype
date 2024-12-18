@@ -1,6 +1,8 @@
-import { Avatar, Button, Container, Flex, Text, Title } from "@mantine/core"
+import { Avatar, Button, Container, Flex, Stepper, Text, Title } from "@mantine/core"
 import Header from "../../Components/Headers/Header"
 import UserMenu from "../../Components/UserMenu/UserMenu"
+import { FaChevronRight, FaCloudDownloadAlt, FaQuestion } from "react-icons/fa"
+import { AiOutlineDown } from "react-icons/ai"
 
 const Transfer = () => {
   return (
@@ -12,64 +14,13 @@ const Transfer = () => {
 
         <Flex justify={"center"} flex={1}>
           <Flex flex={1} direction={"column"} gap={"xl"}>
-            <nav>
-              <ul
-                style={{
-                  display: "flex",
-                  justifyContent: "space-evenly",
-                  gap: "100px",
-                  fontSize: "19px",
-                }}
-              >
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    flex: 1,
-                    justifyContent: "space-around",
-                  }}
-                >
-                  <Text size="xl">Created
-                  2024.12.01 10:30</Text>
-                  <Text size="xl">ᐳ</Text>
-                </li>
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    flex: 1,
-                    justifyContent: "space-around",
-                  }}
-                >
-                  <Text size="xl">Accepted payment
-                  2024.12.01 10:30</Text>
-                  <Text size="xl">ᐳ</Text>
-                </li>
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    flex: 1,
-                    justifyContent: "space-around",
-                  }}
-                >
-                  <Text size="xl">Ready to be issued
-                  2024.12.01 10:32</Text>
-                  <Text size="xl">ᐳ</Text>
-                </li>
-                <li
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    flex: 1,
-                    justifyContent: "space-around",
-                  }}
-                >
-                  <Text size="xl">Issued</Text>
-                  <Text size="xl">ᐳ</Text>
-                </li>
-              </ul>
-            </nav>
+            <Stepper active={1}>
+              <Stepper.Step label="Created" description="2024.12.01 10:30 "></Stepper.Step>
+              <Stepper.Step label="Accepted payment" description="2024.12.01 10:30"></Stepper.Step>
+              <Stepper.Step label="Ready to be issued " description="2024.12.01 10:32"></Stepper.Step>
+              <Stepper.Step label="Issued">Issued</Stepper.Step>
+            </Stepper>
+
             <Flex flex={1} direction={"column"} justify={"center"}>
               <Flex flex={1} justify={"center"} gap={"xl"}>
                 <Flex flex={1} pos={"relative"} direction={"column"} gap={"sm"}>
@@ -78,7 +29,7 @@ const Transfer = () => {
                     <Text size="xl">RUSLAN BAKIEV</Text>
                     <Flex gap={"sm"}>
                       <Text size="xl">5'000 USD</Text>
-                      <img src="/icons/flag.png" />
+                      <img src="/icons/usa-flag.png" />
                     </Flex>
                     <Text>Sending from individual bank account in Russia</Text>
                     <div style={{ display: "flex", justifyContent: "center", zIndex: 30 }}>
@@ -91,10 +42,14 @@ const Transfer = () => {
                           alignItems: "center",
                           width: "30px",
                           height: "30px",
-                          border: "1px solid black",
+                          border: "2px solid black",
+                          transform:"translateY(5px)",
+                          background:"white",
+                          zIndex:30
                         }}
                       >
-                        <img src="/icons/arrow-down.png" />
+                        <AiOutlineDown />
+
                       </div>
                     </div>
                   </Flex>
@@ -103,13 +58,13 @@ const Transfer = () => {
                     <Text size="xl">RUSLAN BAKIEV</Text>
                     <Flex gap={"sm"}>
                       <Text size="xl">5'000 USD</Text>
-                      <img src="/icons/flag.png" />
+                      <img src="/icons/usa-flag.png" />
                     </Flex>
                     <Text>Sending from individual bank account in Russia</Text>
                   </Flex>
                 </Flex>
                 <Flex direction={"column"}>
-                  <Text size="30px">What can you do?</Text>
+                  
                   <Flex flex={1} direction={"column"} gap={"md"} justify={"center"} align={"center"} p={"md"} bd={"1px solid black"}>
                     <img style={{ width: "180px", height: "180px" }} src="/icons/qr.png" />
                     <Text>PIN: 2467</Text>
@@ -118,41 +73,51 @@ const Transfer = () => {
                 </Flex>
               </Flex>
               <Flex mt={"xl"}>
-                <Flex flex={2.5} direction={"column"} align={"flex-end"}>
-                  
-                </Flex>
-                <Flex flex={1} direction={"column"} gap={"md"} >
+                <Flex flex={2.5} direction={"column"} align={"flex-end"}></Flex>
+                <Flex flex={1} direction={"column"} gap={"md"}>
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
-                      <img
+                      <div
                         style={{
                           padding: "2px",
+                          width: "40px",
+                          height: "40px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
                           border: "1px solid black",
                           borderRadius: "100%",
                         }}
-                        src="/icons/lock.png"
-                      />
+                      >
+                        <FaCloudDownloadAlt size={20} />
+                      </div>
                       <Flex direction={"column"}>
                         <Text size="20px">Download receipt</Text>
                       </Flex>
                     </Flex>
-                    <Text>ᐳ</Text>
+                    <FaChevronRight />
                   </Flex>
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
-                      <img
+                      <div
                         style={{
                           padding: "2px",
+                          width: "40px",
+                          height: "40px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
                           border: "1px solid black",
                           borderRadius: "100%",
                         }}
-                        src="/icons/lock.png"
-                      />
+                      >
+                        <FaQuestion size={20} />
+                      </div>
                       <Flex direction={"column"}>
                         <Text size="20px">Support</Text>
                       </Flex>
                     </Flex>
-                    <Text>ᐳ</Text>
+                    <FaChevronRight />
                   </Flex>
                 </Flex>
               </Flex>

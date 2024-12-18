@@ -19,7 +19,9 @@ const Transfers = () => {
               border: "1px solid black",
               width: "100%",
               height: "190px",
+              borderRadius:"8px"
             }}
+            
             direction={"column"}
             gap={"md"}
             justify={"end"}
@@ -36,7 +38,7 @@ const Transfers = () => {
                 px={"60px"}
                 color="gray"
                 variant="outline"
-                size="lg"
+                size="xl"
               >
                 New transfer
               </Button>
@@ -48,11 +50,11 @@ const Transfers = () => {
             rightSection={<img src="/icons/filter.png" />}
           />
           <Flex direction={"column"} gap={"xl"}>
-            <Flex onClick={() => navigate("/transfer")} style={{cursor:"pointer"}} direction={"column"}>
+            <Flex onClick={() => navigate("/transfer")} gap={"sm"} style={{cursor:"pointer"}} direction={"column"}>
               <Text size="xl">Awaiting payment</Text>
               <Flex
                 
-                style={{ border: "1px solid black" }}
+                style={{ border: "1px solid black",borderRadius:"8px" }}
                 p={"md"}
                 align={"center"}
               >
@@ -67,11 +69,11 @@ const Transfers = () => {
                 </Flex>
                 <Flex flex={1} justify={"flex-end"} gap={"sm"} align={"center"}>
                   <Text size="30px">5'000 USD</Text>
-                  <img src="/icons/flag.png" />
+                  <img src="/icons/usa-flag.png" />
                 </Flex>
               </Flex>
               <Flex
-                style={{ border: "1px solid black" }}
+                style={{ border: "1px solid black",borderRadius:"8px" }}
                 p={"md"}
                 align={"center"}
               >
@@ -86,14 +88,14 @@ const Transfers = () => {
                 </Flex>
                 <Flex flex={1} justify={"flex-end"} gap={"sm"} align={"center"}>
                   <Text size="30px">5'000 USD</Text>
-                  <img src="/icons/flag.png" />
+                  <img src="/icons/usa-flag.png" />
                 </Flex>
               </Flex>
             </Flex>
-            <Flex onClick={() => navigate("/transfer")} style={{cursor:"pointer"}} direction={"column"}>
-              <Text size="xl">Issued</Text>
+            <Flex onClick={() => navigate("/transfer")} gap={"sm"}  style={{cursor:"pointer"}} direction={"column"}>
+              <Text size="xl">Issued</Text> 
               <Flex
-                style={{ border: "1px solid black" }}
+                style={{ border: "1px solid black",borderRadius:"8px" }}
                 p={"md"}
                 align={"center"}
               >
@@ -108,11 +110,11 @@ const Transfers = () => {
                 </Flex>
                 <Flex flex={1} justify={"flex-end"} gap={"sm"} align={"center"}>
                   <Text size="30px">5'000 USD</Text>
-                  <img src="/icons/flag.png" />
+                  <img src="/icons/usa-flag.png" />
                 </Flex>
               </Flex>
               <Flex
-                style={{ border: "1px solid black" }}
+                style={{ border: "1px solid black",borderRadius:"8px" }}
                 p={"md"}
                 align={"center"}
               >
@@ -127,7 +129,7 @@ const Transfers = () => {
                 </Flex>
                 <Flex flex={1} justify={"flex-end"} gap={"sm"} align={"center"}>
                   <Text size="30px">5'000 USD</Text>
-                  <img src="/icons/flag.png" />
+                  <img src="/icons/usa-flag.png" />
                 </Flex>
               </Flex>
             </Flex>
