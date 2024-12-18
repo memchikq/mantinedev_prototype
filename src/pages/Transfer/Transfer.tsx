@@ -26,7 +26,9 @@ const Transfer = () => {
                 <Flex flex={1} pos={"relative"} direction={"column"} gap={"sm"}>
                   <Paper shadow="sm" radius={"md"} withBorder>
                     <Flex p={"md"} gap={"sm"} direction={"column"}>
-                      <Text size="lg">Sender</Text>
+                      <Title order={4} style={{ textTransform: "uppercase" }} size="xl">
+                        Sender
+                      </Title>
                       <Text size="xl">RUSLAN BAKIEV</Text>
                       <Flex gap={"sm"}>
                         <Text size="xl">5'000 USD</Text>
@@ -56,7 +58,9 @@ const Transfer = () => {
                   </Paper>
                   <Paper shadow="sm" radius={"md"} withBorder>
                     <Flex p={"md"} gap={"sm"} direction={"column"}>
-                      <Text size="lg">Receiver</Text>
+                      <Title order={4} style={{ textTransform: "uppercase" }} size="xl">
+                        Receiver
+                      </Title>
                       <Text size="xl">RUSLAN BAKIEV</Text>
                       <Flex gap={"sm"}>
                         <Text size="xl">5'000 USD</Text>
@@ -78,17 +82,24 @@ const Transfer = () => {
               </Flex>
               <Flex mt={"xl"}>
                 <Flex flex={2.5} direction={"column"} align={"flex-end"}></Flex>
-                <Flex flex={1} direction={"column"} gap={"md"}>
+                <Flex  w={335} direction={"column"} gap={"md"}>
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
-                      <NavLink label="Download receipt" rightSection={<FaChevronRight size={20} />} leftSection={<FaCloudDownloadAlt size={20} />} />
+                      <NavLink
+                        label="Download receipt"
+                        rightSection={<FaChevronRight size={20} />}
+                        leftSection={<FaCloudDownloadAlt size={20} />}
+                      />
                     </Flex>
                   </Flex>
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
-                      <NavLink label="Download receipt" rightSection={<FaChevronRight size={20} />} leftSection={<FaQuestion size={20} />} />
+                      <NavLink
+                        label="Download receipt"
+                        rightSection={<FaChevronRight size={20} />}
+                        leftSection={<FaQuestion size={20} />}
+                      />
                     </Flex>
-                   
                   </Flex>
                 </Flex>
               </Flex>

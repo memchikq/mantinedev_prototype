@@ -78,12 +78,12 @@ const Profile = () => {
         setActive(item.label)
       }}
     >
-      <Text>{item.label}</Text>
+      <Title order={4} style={{textTransform:"uppercase"}} size="xl">{item.label}</Title>
 
       {item.links.map((v, i) => (
         <NavLink
           key={i}
-          label={v.linkLabel}
+          label={<Text size="md">{v.linkLabel}</Text>}
           className={classes.link}
           rightSection={<FaChevronRight />}
           leftSection={<v.icon className={classes.linkIcon} />}

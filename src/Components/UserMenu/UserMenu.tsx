@@ -10,10 +10,10 @@ const UserMenu = () => {
   const navigate = useNavigate()
   return (
     <div>
-      <NavLink onClick={() => navigate("/")} label="Transfers" leftSection={<IoLogoUsd />} />
-      <NavLink label="Insurance" leftSection={<CiUmbrella />} />
-      <NavLink label="Smart contracts" leftSection={<MdOutlineSecurity />} />
-      <NavLink label="Salaries" leftSection={<GoGraph />} />
+      <NavLink onClick={() => navigate("/")} label={<Text size="16px">Transfers</Text>} leftSection={<IoLogoUsd />} />
+      <NavLink label={<Text size="16px">Insurance</Text>} leftSection={<CiUmbrella />} />
+      <NavLink label={<Text size="16px">Smart contracts</Text>} leftSection={<MdOutlineSecurity />} />
+      <NavLink label={<Text size="16px">Salaries</Text>} leftSection={<GoGraph />} />
       <Link to={"/new-product"}>
         <Text>+ Add new products</Text>
       </Link>

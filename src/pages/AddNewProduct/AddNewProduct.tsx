@@ -42,7 +42,7 @@ const AddNewProduct = () => {
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
 
-              <Button color="blue" fullWidth mt="md" radius="md">
+              <Button color="blue" fullWidth size="xl" variant="outline" mt="md" radius="md">
                 Add service
               </Button>
             </Card>
@@ -59,7 +59,7 @@ const AddNewProduct = () => {
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
 
-              <Button color="blue" fullWidth mt="md" radius="md">
+              <Button color="blue" fullWidth size="xl" variant="outline" mt="md" radius="md">
                 Add service
               </Button>
             </Card>
@@ -76,7 +76,7 @@ const AddNewProduct = () => {
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
 
-              <Button color="blue" fullWidth mt="md" radius="md">
+              <Button color="blue" fullWidth size="xl" variant="outline" mt="md" radius="md">
                 Add service
               </Button>
             </Card>

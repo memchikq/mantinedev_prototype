@@ -1,4 +1,4 @@
-import { BackgroundImage, Button, Container, Flex, Input, Paper, Text } from "@mantine/core"
+import { BackgroundImage, Button, Container, Flex, Input, Paper, Text, Title } from "@mantine/core"
 import Header from "../../Components/Headers/Header"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 import { useNavigate } from "react-router-dom"
@@ -41,7 +41,7 @@ const Transfers = () => {
           <Input placeholder="Search" size="lg" rightSection={<img src="/icons/filter.png" />} />
           <Flex direction={"column"} gap={"xl"}>
             <Flex onClick={() => navigate("/transfer")} style={{ cursor: "pointer" }} direction={"column"}>
-              <Text size="xl">Awaiting payment</Text>
+            <Title order={4} style={{textTransform:"uppercase"}}>Awaiting payment</Title>
               <Paper shadow="sm" radius={"md"} withBorder>
                 <Flex p={"md"} align={"center"}>
                   <Text size="lg" flex={1}>
@@ -74,7 +74,8 @@ const Transfers = () => {
               </Paper>
             </Flex>
             <Flex onClick={() => navigate("/transfer")}  style={{ cursor: "pointer" }} direction={"column"}>
-              <Text size="xl">Issued</Text>
+            <Title order={4} style={{textTransform:"uppercase"}} >Issued</Title>
+              
               <Paper shadow="sm" radius={"md"} withBorder>
                 <Flex p={"md"} align={"center"}>
                   <Text size="lg" flex={1}>
