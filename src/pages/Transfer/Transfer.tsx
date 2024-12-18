@@ -1,4 +1,4 @@
-import { Avatar, Button, Container, Flex, Stepper, Text, Title } from "@mantine/core"
+import { Avatar, Button, Container, Flex, NavLink, Paper, Stepper, Text, Title } from "@mantine/core"
 import Header from "../../Components/Headers/Header"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 import { FaChevronRight, FaCloudDownloadAlt, FaQuestion } from "react-icons/fa"
@@ -24,52 +24,56 @@ const Transfer = () => {
             <Flex flex={1} direction={"column"} justify={"center"}>
               <Flex flex={1} justify={"center"} gap={"xl"}>
                 <Flex flex={1} pos={"relative"} direction={"column"} gap={"sm"}>
-                  <Flex style={{ border: "1px solid black" }} p={"md"} gap={"sm"} direction={"column"}>
-                    <Text size="lg">Sender</Text>
-                    <Text size="xl">RUSLAN BAKIEV</Text>
-                    <Flex gap={"sm"}>
-                      <Text size="xl">5'000 USD</Text>
-                      <img src="/icons/usa-flag.png" />
-                    </Flex>
-                    <Text>Sending from individual bank account in Russia</Text>
-                    <div style={{ display: "flex", justifyContent: "center", zIndex: 30 }}>
-                      <div
-                        style={{
-                          borderRadius: "100%",
-                          position: "absolute",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          width: "30px",
-                          height: "30px",
-                          border: "2px solid black",
-                          transform:"translateY(5px)",
-                          background:"white",
-                          zIndex:30
-                        }}
-                      >
-                        <AiOutlineDown />
-
+                  <Paper shadow="sm" radius={"md"} withBorder>
+                    <Flex p={"md"} gap={"sm"} direction={"column"}>
+                      <Text size="lg">Sender</Text>
+                      <Text size="xl">RUSLAN BAKIEV</Text>
+                      <Flex gap={"sm"}>
+                        <Text size="xl">5'000 USD</Text>
+                        <img src="/icons/usa-flag.png" />
+                      </Flex>
+                      <Text>Sending from individual bank account in Russia</Text>
+                      <div style={{ display: "flex", justifyContent: "center", zIndex: 30 }}>
+                        <div
+                          style={{
+                            borderRadius: "100%",
+                            position: "absolute",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "30px",
+                            height: "30px",
+                            border: "2px solid black",
+                            transform: "translateY(5px)",
+                            background: "white",
+                            zIndex: 30,
+                          }}
+                        >
+                          <AiOutlineDown />
+                        </div>
                       </div>
-                    </div>
-                  </Flex>
-                  <Flex style={{ border: "1px solid black" }} p={"md"} gap={"sm"} direction={"column"}>
-                    <Text size="lg">Receiver</Text>
-                    <Text size="xl">RUSLAN BAKIEV</Text>
-                    <Flex gap={"sm"}>
-                      <Text size="xl">5'000 USD</Text>
-                      <img src="/icons/usa-flag.png" />
                     </Flex>
-                    <Text>Sending from individual bank account in Russia</Text>
-                  </Flex>
+                  </Paper>
+                  <Paper shadow="sm" radius={"md"} withBorder>
+                    <Flex p={"md"} gap={"sm"} direction={"column"}>
+                      <Text size="lg">Receiver</Text>
+                      <Text size="xl">RUSLAN BAKIEV</Text>
+                      <Flex gap={"sm"}>
+                        <Text size="xl">5'000 USD</Text>
+                        <img src="/icons/usa-flag.png" />
+                      </Flex>
+                      <Text>Sending from individual bank account in Russia</Text>
+                    </Flex>
+                  </Paper>
                 </Flex>
                 <Flex direction={"column"}>
-                  
-                  <Flex flex={1} direction={"column"} gap={"md"} justify={"center"} align={"center"} p={"md"} bd={"1px solid black"}>
-                    <img style={{ width: "180px", height: "180px" }} src="/icons/qr.png" />
-                    <Text>PIN: 2467</Text>
-                    <Text>Use PIN or QR code to receive the transfer</Text>
-                  </Flex>
+                  <Paper flex={1} shadow="sm" h={"100%"} radius={"md"} withBorder>
+                    <Flex flex={1} direction={"column"} gap={"md"} justify={"center"} align={"center"} p={"md"}>
+                      <img style={{ width: "180px", height: "180px" }} src="/icons/qr.png" />
+                      <Text>PIN: 2467</Text>
+                      <Text>Use PIN or QR code to receive the transfer</Text>
+                    </Flex>
+                  </Paper>
                 </Flex>
               </Flex>
               <Flex mt={"xl"}>
@@ -77,47 +81,14 @@ const Transfer = () => {
                 <Flex flex={1} direction={"column"} gap={"md"}>
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
-                      <div
-                        style={{
-                          padding: "2px",
-                          width: "40px",
-                          height: "40px",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          border: "1px solid black",
-                          borderRadius: "100%",
-                        }}
-                      >
-                        <FaCloudDownloadAlt size={20} />
-                      </div>
-                      <Flex direction={"column"}>
-                        <Text size="20px">Download receipt</Text>
-                      </Flex>
+                      <NavLink label="Download receipt" rightSection={<FaChevronRight size={20} />} leftSection={<FaCloudDownloadAlt size={20} />} />
                     </Flex>
-                    <FaChevronRight />
                   </Flex>
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
-                      <div
-                        style={{
-                          padding: "2px",
-                          width: "40px",
-                          height: "40px",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          border: "1px solid black",
-                          borderRadius: "100%",
-                        }}
-                      >
-                        <FaQuestion size={20} />
-                      </div>
-                      <Flex direction={"column"}>
-                        <Text size="20px">Support</Text>
-                      </Flex>
+                      <NavLink label="Download receipt" rightSection={<FaChevronRight size={20} />} leftSection={<FaQuestion size={20} />} />
                     </Flex>
-                    <FaChevronRight />
+                   
                   </Flex>
                 </Flex>
               </Flex>

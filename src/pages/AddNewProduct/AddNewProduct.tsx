@@ -1,6 +1,6 @@
-import Header from "../../Components/Headers/Header";
-import { Container, Flex, Text } from "@mantine/core";
-import UserMenu from "../../Components/UserMenu/UserMenu";
+import Header from "../../Components/Headers/Header"
+import { Badge, Button, Card, Container, Flex, Group, Image, Paper, Text } from "@mantine/core"
+import UserMenu from "../../Components/UserMenu/UserMenu"
 
 const AddNewProduct = () => {
   return (
@@ -10,88 +10,81 @@ const AddNewProduct = () => {
       <Flex gap={"100px"} mt={40}>
         <UserMenu />
         <Flex flex={1} direction={"column"} align={"center"} gap={"md"}>
+          <Paper w={"100%"} shadow="sm" radius={"md"} withBorder>
+            <Flex
+              p={"md"}
+              style={{ width: "100%", height: "190px" }}
+              // bg={"#9fe870"}
+              direction={"column"}
+              gap={"md"}
+              justify={"end"}
+              align={"start"}
+            >
+              <Text size="30px" fw={555}>
+                Products
+              </Text>
+              <Text fw={500} size="xl" maw={"50%"}>
+                Use all the possibilities of our products to make your business more efficient and profitable
+              </Text>
+            </Flex>
+          </Paper>
+          <Flex w={"100%"} gap={"md"}>
+            <Card shadow="sm" padding="lg" radius="md" withBorder>
+              <Text ta={"center"} size="xl" fw={500}>
+                Insurance
+              </Text>
 
-          <Flex 
-          
-            p={"md"}
-            style={{  width: "100%",height:"190px",borderRadius:"8px",fontWeight:"bold" }}
-            // bg={"#9fe870"}
-            bd={"1px solid black"}
-            direction={"column"}
-            gap={"md"}
-            justify={"end"}
-            align={"start"}
-          >
-            <Text size="30px" fw={555}>Products</Text>
-            <Text fw={500}  size="xl" maw={"50%"}>
-              Use all the possibilities of our products to make your business
-              more efficient and profitable
-            </Text>
-          </Flex>
-          <Flex
-            
-            w={"100%"}
-            gap={"md"}
-          >
-            <Flex style={{border: "1px solid black",borderRadius:"8px"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
-              <Text ta={"center"} size="30px">
-                Insurance
-              </Text>
-              <div
-                style={{
-                  border: "1px solid black",
-                  width: "100%",
-                  height: "120px",
-                }}
-              ></div>
-              <Text size="20px" ta={"center"}>
+              <Card.Section p={10}>
+                <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
+              </Card.Section>
+
+              <Text size="sm" c="dimmed">
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
-              <Text pt={"md"} size="20px" ta={"center"}>
+
+              <Button color="blue" fullWidth mt="md" radius="md">
                 Add service
-              </Text>
-            </Flex>
-            <Flex style={{border: "1px solid black",borderRadius:"8px"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
-              <Text ta={"center"} size="30px">
+              </Button>
+            </Card>
+            <Card shadow="sm" padding="lg" radius="md" withBorder>
+              <Text ta={"center"} size="xl" fw={500}>
                 Insurance
               </Text>
-              <div
-                style={{
-                  border: "1px solid black",
-                  width: "100%",
-                  height: "120px",
-                }}
-              ></div>
-              <Text size="20px" ta={"center"}>
+
+              <Card.Section p={10}>
+                <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
+              </Card.Section>
+
+              <Text size="sm" c="dimmed">
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
-              <Text pt={"md"} size="20px" ta={"center"}>
+
+              <Button color="blue" fullWidth mt="md" radius="md">
                 Add service
-              </Text>
-            </Flex>
-            <Flex style={{border: "1px solid black",borderRadius:"8px"}} p={"md"} direction={"column"} w={"100%"} gap={"xl"}>
-              <Text ta={"center"} size="30px">
+              </Button>
+            </Card>
+            <Card shadow="sm" padding="lg" radius="md" withBorder>
+              <Text ta={"center"} size="xl" fw={500}>
                 Insurance
               </Text>
-              <div
-                style={{
-                  border: "1px solid black",
-                  width: "100%",
-                  height: "120px",
-                }}
-              ></div>
-              <Text size="20px" ta={"center"}>
+
+              <Card.Section p={10}>
+                <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
+              </Card.Section>
+
+              <Text size="sm" c="dimmed">
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
-              <Text pt={"md"} size="20px" ta={"center"}>
+
+              <Button color="blue" fullWidth mt="md" radius="md">
                 Add service
-              </Text>
-            </Flex>
+              </Button>
+            </Card>
           </Flex>
         </Flex>
       </Flex>
     </Container>
-  );
-};
+  )
+}
 
-export default AddNewProduct;
+export default AddNewProduct
