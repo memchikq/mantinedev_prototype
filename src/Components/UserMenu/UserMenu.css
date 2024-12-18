@@ -1,0 +1,11 @@
+.menu_nav_list{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    
+    cursor: pointer;
+}
+.menu_nav_list:hover{
+    background-color: rgb(0, 0, 0, 0.2);
+}
