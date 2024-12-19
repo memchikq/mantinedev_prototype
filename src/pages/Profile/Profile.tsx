@@ -112,11 +112,11 @@ const Profile = () => {
     <Container size={"90%"} style={{ padding: "8px" }}>
       <Header />
 
-      <Flex gap={"100px"} mt={40}>
+      <Flex className="flex-col" gap={"100px"} mt={40}>
         <UserMenu />
 
-        <Flex flex={1} justify={"center"} gap={"md"}>
-          <Flex flex={1} direction={"column"} gap={"md"} align={"center"}>
+        <Flex pb={"xl"} className="flex-col" flex={1} justify={"center"} gap={"md"}>
+          <Flex  flex={1} direction={"column"} gap={"md"} align={"center"}>
             <Paper className="bg_img" shadow="sm" radius="md" withBorder>
               <Flex
                 direction={"column"}

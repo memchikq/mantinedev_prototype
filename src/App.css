@@ -1,0 +1,19 @@
+.flex-col {
+    @media (max-width: $mantine-breakpoint-md) {
+      flex-direction: column;
+    }
+  }
+.transfers-list {
+    align-items: center;
+    @media (max-width: $mantine-breakpoint-md) {
+      flex-direction: column;
+      align-items: start;
+      gap: 4px;
+    }
+  }
+.new-transfer {
+    width: 60%;
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 100%;
+    }
+  }

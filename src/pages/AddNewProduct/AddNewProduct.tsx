@@ -7,7 +7,7 @@ const AddNewProduct = () => {
     <Container size={"90%"} style={{ padding: "8px" }}>
       <Header />
 
-      <Flex gap={"100px"} mt={40}>
+      <Flex gap={"100px"} className="flex-col" wrap={"wrap"} mt={40}>
         <UserMenu />
         <Flex flex={1} direction={"column"} align={"center"} gap={"md"}>
           <Paper className="bg_img" w={"100%"} shadow="sm" radius={"md"} withBorder>
@@ -28,8 +28,8 @@ const AddNewProduct = () => {
               </Text>
             </Flex>
           </Paper>
-          <Flex w={"100%"} gap={"md"}>
-            <Card flex={1} shadow="sm" padding="lg" radius="md" withBorder>
+          <Flex flex={1} w={"100%"} className="flex-col" wrap={"wrap"} gap={"md"}>
+            <Card w={"100%"} flex={1} shadow="sm" padding="lg" radius="md" withBorder>
               <Text ta={"center"} size="xl" fw={500}>
                 Insurance
               </Text>

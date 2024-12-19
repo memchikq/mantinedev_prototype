@@ -9,7 +9,7 @@ const Transfer = () => {
     <Container size={"90%"} style={{ padding: "8px" }}>
       <Header />
 
-      <Flex gap={"100px"} mt={40}>
+      <Flex className="flex-col" gap={"100px"} mt={40}>
         <UserMenu />
 
         <Flex justify={"center"} flex={1}>
@@ -24,7 +24,7 @@ const Transfer = () => {
             </Stepper>
 
             <Flex flex={1} direction={"column"} justify={"center"}>
-              <Flex flex={1} justify={"center"} gap={"xl"}>
+              <Flex className="flex-col" flex={1} justify={"center"} gap={"xl"}>
                 <Flex flex={1} pos={"relative"} direction={"column"}>
                   <Paper shadow="sm" radius={"md"} withBorder>
                     <Flex p={"md"} gap={"sm"} direction={"column"}>

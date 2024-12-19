@@ -17,7 +17,7 @@ const Transfers = () => {
     <Container size={"90%"} style={{ padding: "8px" }}>
       <Header />
 
-      <Flex gap={"100px"} mt={40}>
+      <Flex gap={"100px"} className="flex-col" mt={40}>
         <UserMenu />
 
         <Flex direction={"column"} gap={"xl"} flex={1}>
@@ -46,7 +46,7 @@ const Transfers = () => {
           </Paper>
           <Input placeholder="Search" styles={{input:{fontSize:"16px"}}} size="lg" rightSection={<img src="/icons/filter.png" />} />
           <Flex direction={"column"} gap={"xl"}>
-            <Flex onClick={() => navigate("/transfer")} style={{ cursor: "pointer" }} direction={"column"}>
+            <Flex  onClick={() => navigate("/transfer")} style={{ cursor: "pointer" }} direction={"column"}>
               <Title order={5} style={{ textTransform: "uppercase" }}>
                 Awaiting payment
               </Title>
@@ -68,7 +68,7 @@ const Transfers = () => {
                   }}
                   withBorder
                 >
-                  <Flex p={"md"} align={"center"}>
+                  <Flex className="transfers-list" p={"md"} >
                     <Text size="md" flex={1}>
                       {v.date}
                     </Text>
@@ -109,7 +109,7 @@ const Transfers = () => {
                   }}
                   withBorder
                 >
-                  <Flex p={"md"} align={"center"}>
+                  <Flex className="transfers-list" p={"md"} >
                     <Text size="md" flex={1}>
                       {v.date}
                     </Text>

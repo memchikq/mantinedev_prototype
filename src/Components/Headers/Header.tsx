@@ -8,7 +8,7 @@ const Header = () => {
     <header>
      <Space h={'xl'}/>
       <Flex justify={"space-between"} align={"center"}>
-        <Flex w={200} h={70}>
+        <Flex w={200}  visibleFrom="md" h={70}>
           <BackgroundImage
             src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png"
             radius="sm"

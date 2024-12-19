@@ -49,10 +49,10 @@ const NewTransfer = () => {
     <Container size={"90%"} style={{ padding: "8px" }}>
       <Header />
 
-      <Flex gap={"100px"} mt={40}>
+      <Flex className="flex-col" gap={"100px"} mt={40}>
         <UserMenu />
 
-        <Flex justify={"center"} flex={1}>
+        <Flex pb={"xl"} justify={"center"} flex={1}>
           <Flex flex={1} direction={"column"} gap={"xl"}>
             <Stepper active={1}>
               <Stepper.Step icon={<></>} label="Amount"></Stepper.Step>
@@ -61,7 +61,7 @@ const NewTransfer = () => {
               <Stepper.Step icon={<></>} label="Pay"></Stepper.Step>
             </Stepper>
             <Flex direction={"column"} align={"center"} gap={"lg"}>
-              <Flex w={"60%"} direction={"column"} gap={"lg"}>
+              <Flex className="new-transfer" direction={"column"} gap={"lg"}>
                 <Flex direction={"column"}>
                   <Text size="xl">Sending from Russia</Text>
                   <TextInput
@@ -101,11 +101,6 @@ const NewTransfer = () => {
                   <Text size="xl">Receiving in Turkey</Text>
                   <TextInput
                     size="xl"
-                    styles={{
-                      input: {
-                        minWidth: "500px",
-                      },
-                    }}
                     mr={"md"}
                     rightSection={
                       <Menu
