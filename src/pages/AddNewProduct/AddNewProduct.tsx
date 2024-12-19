@@ -1,5 +1,5 @@
 import Header from "../../Components/Headers/Header"
-import { Badge, Button, Card, Container, Flex, Group, Image, Paper, Text, Title } from "@mantine/core"
+import { Badge, Button, Card, Container, Flex, Group, Image, Paper, Space, Text, Title } from "@mantine/core"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 
 const AddNewProduct = () => {
@@ -33,15 +33,16 @@ const AddNewProduct = () => {
               <Title ta={"center"} style={{ textTransform: "uppercase" }}  order={5}>
                 Insurance
               </Title>
+              <Space h={"md"}/>
 
               <Card.Section p={10}>
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
               </Card.Section>
-
+              <Space h={"md"}/>
               <Text size="md" ta={"center"} >
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
-
+              <Space h={"md"}/>
               <Button color="blue" fullWidth size="xl" variant="outline" mt="md" radius="md">
                 Add service
               </Button>
@@ -50,15 +51,15 @@ const AddNewProduct = () => {
             <Title ta={"center"} style={{ textTransform: "uppercase" }}  order={5}>
                 Insurance
               </Title>
-
+              <Space h={"md"}/>
               <Card.Section p={10}>
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
               </Card.Section>
-
+              <Space h={"md"}/>
               <Text size="md" ta={"center"} >
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
-
+              <Space h={"md"}/>
               <Button color="blue" fullWidth size="xl" variant="outline" mt="md" radius="md">
                 Add service
               </Button>
@@ -67,15 +68,15 @@ const AddNewProduct = () => {
             <Title ta={"center"} style={{ textTransform: "uppercase" }} order={5}>
                 Insurance
               </Title>
-
+              <Space h={"md"}/>
               <Card.Section p={10}>
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
               </Card.Section>
-
+              <Space h={"md"}/>
               <Text size="md" ta={"center"} >
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
-
+              <Space h={"md"}/>
               <Button color="blue" fullWidth size="xl" variant="outline" mt="md" radius="md">
                 Add service
               </Button>
