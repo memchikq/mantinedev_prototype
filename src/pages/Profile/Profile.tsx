@@ -1,4 +1,4 @@
-import { Avatar, BackgroundImage, Button, Card, Container, Flex, Group, Image, NavLink, Paper, Text, Title } from "@mantine/core"
+import { Avatar, BackgroundImage, Button, Card, Container, Divider, Flex, Group, Image, NavLink, Paper, Text, Title } from "@mantine/core"
 import Header from "../../Components/Headers/Header"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 import { IoIosNotifications } from "react-icons/io"
@@ -32,19 +32,19 @@ const data = [
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
-        linkLabelSecond:"Adjust security and privacy settings"
+        linkLabelSecond: "Adjust security and privacy settings",
       },
       {
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
-        linkLabelSecond:"Adjust security and privacy settings"
+        linkLabelSecond: "Adjust security and privacy settings",
       },
       {
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
-        linkLabelSecond:"Adjust security and privacy settings"
+        linkLabelSecond: "Adjust security and privacy settings",
       },
     ],
   },
@@ -56,19 +56,19 @@ const data = [
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
-        linkLabelSecond:"Adjust security and privacy settings"
+        linkLabelSecond: "Adjust security and privacy settings",
       },
       {
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
-        linkLabelSecond:"Adjust security and privacy settings"
+        linkLabelSecond: "Adjust security and privacy settings",
       },
       {
         link: "",
         icon: CiLock,
         linkLabel: "Security and privacy",
-        linkLabelSecond:"Adjust security and privacy settings"
+        linkLabelSecond: "Adjust security and privacy settings",
       },
     ],
   },
@@ -76,7 +76,7 @@ const data = [
 const Profile = () => {
   const [active, setActive] = useState("Billing")
 
-  const links = data.map((item,i) => (
+  const links = data.map((item, i) => (
     <div
       key={i}
       onClick={(event) => {
@@ -84,20 +84,26 @@ const Profile = () => {
         setActive(item.label)
       }}
     >
-      <Title order={5} style={{textTransform:"uppercase"}} size="xl">{item.label}</Title>
+      <Title order={5} style={{ textTransform: "uppercase" }}>
+        {item.label}
+      </Title>
 
       {item.links.map((v, i) => (
-        <NavLink
-          key={i}
-          label={<Flex direction={"column"}>
-            <Text size="md">{v.linkLabel}</Text>
-            {v.linkLabelSecond ? <Text size="md">{v.linkLabelSecond}</Text>:""}
-            
-          </Flex>}
-          className={classes.link}
-          rightSection={<FaChevronRight />}
-          leftSection={<v.icon className={classes.linkIcon} />}
-        ></NavLink>
+        <>
+          <NavLink
+            key={i}
+            label={
+              <Flex direction={"column"}>
+                <Text size="md">{v.linkLabel}</Text>
+                {v.linkLabelSecond ? <Text size="md">{v.linkLabelSecond}</Text> : ""}
+              </Flex>
+            }
+            className={classes.link}
+            rightSection={<FaChevronRight />}
+            leftSection={<v.icon className={classes.linkIcon} />}
+          ></NavLink>
+          <Divider/>
+        </>
       ))}
     </div>
   ))
@@ -111,7 +117,6 @@ const Profile = () => {
         <Flex flex={1} justify={"center"} gap={"md"}>
           <Flex flex={1} direction={"column"} gap={"md"} align={"center"}>
             <Paper className="bg_img" shadow="sm" radius="md" withBorder>
-            
               <Flex
                 direction={"column"}
                 justify={"center"}
@@ -126,7 +131,6 @@ const Profile = () => {
                 <Avatar size={"xl"} src={"/icons/user.png"} />
                 <Text size="md">Ruslan Bakiev</Text>
               </Flex>
-              
             </Paper>
             <Text size="md">User identificator: P81209445</Text>
             <Button size="xl" variant="outline">

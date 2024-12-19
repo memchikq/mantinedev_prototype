@@ -15,10 +15,10 @@ const Transfer = () => {
         <Flex justify={"center"} flex={1}>
           <Flex flex={1} direction={"column"} gap={"xl"}>
             <Stepper active={1}>
-              <Stepper.Step label="Created" description="2024.12.01 10:30 "></Stepper.Step>
-              <Stepper.Step label="Accepted payment" description="2024.12.01 10:30"></Stepper.Step>
-              <Stepper.Step label="Ready to be issued " description="2024.12.01 10:32"></Stepper.Step>
-              <Stepper.Step label="Issued">Issued</Stepper.Step>
+              <Stepper.Step icon={<></>} label="Created" description="2024.12.01 10:30 "></Stepper.Step>
+              <Stepper.Step icon={<></>} label="Accepted payment" description="2024.12.01 10:30"></Stepper.Step>
+              <Stepper.Step icon={<></>} label="Ready to be issued " description="2024.12.01 10:32"></Stepper.Step>
+              <Stepper.Step icon={<></>} label="Issued">Issued</Stepper.Step>
             </Stepper>
 
             <Flex flex={1} direction={"column"} justify={"center"}>
@@ -29,10 +29,10 @@ const Transfer = () => {
                       <Title order={5} style={{ textTransform: "uppercase" }}>
                         Sender
                       </Title>
-                      <Text size="xl">RUSLAN BAKIEV</Text>
+                      <Text size="md">RUSLAN BAKIEV</Text>
                       <Flex gap={"sm"} align={"center"}>
-                        <Text fw={600} size="md">5'000 USD</Text>
-                        <img src="/icons/usa-flag.png" />
+                        <Text fw={600} size="xl">5'000 USD</Text>
+                        <span className="fi fi-us"></span>
                       </Flex>
                       <Text>Sending from individual bank account in Russia</Text>
                     </Flex>
@@ -43,8 +43,8 @@ const Transfer = () => {
                       </Title>
                       <Text size="md">RUSLAN BAKIEV</Text>
                       <Flex gap={"sm"} align={"center"}>
-                        <Text fw={600} size="md">5'000 USD</Text>
-                        <img src="/icons/usa-flag.png" />
+                        <Text fw={600} size="xl">5'000 USD</Text>
+                        <span className="fi fi-us"></span>
                       </Flex>
                       <Text>Sending from individual bank account in Russia</Text>
                     </Flex>
