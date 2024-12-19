@@ -56,7 +56,7 @@ const Transfer = () => {
                     </Flex>
                   </Paper>
                 </Flex>
-                <Flex direction={"column"}>
+                <Flex flex={1} direction={"column"}>
                   <Paper flex={1} h={"100%"} radius={"md"}>
                     <Flex flex={1} direction={"column"} gap={"md"} justify={"center"} align={"center"} p={"md"}>
                       <img style={{ width: "180px", height: "180px" }} src="/icons/qr.png" />

@@ -13,17 +13,16 @@ const AddNewProduct = () => {
           <Paper className="bg_img" w={"100%"} shadow="sm" radius={"md"} withBorder>
             <Flex
               p={"md"}
-              style={{ width: "100%", height: "190px" }}
-              // bg={"#9fe870"}
+              
+              className="header"
               direction={"column"}
               gap={"md"}
-              justify={"end"}
-              align={"start"}
+             
             >
               <Text  size="30px" >
                 Products
               </Text>
-              <Text size="md"  maw={"50%"}>
+              <Text size="md"  className="header-description-text">
                 Use all the possibilities of our products to make your business more efficient and profitable
               </Text>
             </Flex>

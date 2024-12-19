@@ -1,4 +1,19 @@
-import { Avatar, BackgroundImage, Button, Card, Container, Divider, Flex, Group, Image, NavLink, Paper, Space, Text, Title } from "@mantine/core"
+import {
+  Avatar,
+  BackgroundImage,
+  Button,
+  Card,
+  Container,
+  Divider,
+  Flex,
+  Group,
+  Image,
+  NavLink,
+  Paper,
+  Space,
+  Text,
+  Title,
+} from "@mantine/core"
 import Header from "../../Components/Headers/Header"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 import { IoIosNotifications } from "react-icons/io"
@@ -87,10 +102,10 @@ const Profile = () => {
       <Title order={5} style={{ textTransform: "uppercase" }}>
         {item.label}
       </Title>
-      <Space h={"md"}/>
+      <Space h={"md"} />
       {item.links.map((v, i) => (
         <>
-        <Divider />
+          <Divider />
           <NavLink
             key={i}
             label={
@@ -103,7 +118,6 @@ const Profile = () => {
             rightSection={<FaChevronRight />}
             leftSection={<v.icon className={classes.linkIcon} />}
           ></NavLink>
-          
         </>
       ))}
     </div>
@@ -116,19 +130,9 @@ const Profile = () => {
         <UserMenu />
 
         <Flex pb={"xl"} className="flex-col" flex={1} justify={"center"} gap={"md"}>
-          <Flex  flex={1} direction={"column"} gap={"md"} align={"center"}>
-            <Paper className="bg_img" shadow="sm" radius="md" withBorder>
-              <Flex
-                direction={"column"}
-                justify={"center"}
-                gap={"md"}
-                align={"center"}
-                style={{
-                  padding: "4px",
-                  width: "400px",
-                  height: "200px",
-                }}
-              >
+          <Flex flex={1} direction={"column"} gap={"md"} align={"center"}>
+            <Paper className="bg_img user-card-paper" shadow="sm" radius="md" withBorder>
+              <Flex flex={1} direction={"column"} className="user-card" gap={"md"}>
                 <Avatar size={"xl"} src={"/icons/user.png"} />
                 <Text size="md">Ruslan Bakiev</Text>
               </Flex>

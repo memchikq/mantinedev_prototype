@@ -55,7 +55,7 @@ const NewTransfer = () => {
         <Flex pb={"xl"} justify={"center"} flex={1}>
           <Flex flex={1} direction={"column"} gap={"xl"}>
             <Stepper active={1}>
-              <Stepper.Step icon={<></>} label="Amount"></Stepper.Step>
+              <Stepper.Step  icon={<></>} label="Amount"></Stepper.Step>
               <Stepper.Step icon={<></>} label="Receiver detail"></Stepper.Step>
               <Stepper.Step icon={<></>} label="Review "></Stepper.Step>
               <Stepper.Step icon={<></>} label="Pay"></Stepper.Step>

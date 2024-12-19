@@ -1,19 +1,62 @@
 .flex-col {
-    @media (max-width: $mantine-breakpoint-md) {
-      flex-direction: column;
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    flex-direction: column;
   }
+}
 .transfers-list {
-    align-items: center;
-    @media (max-width: $mantine-breakpoint-md) {
-      flex-direction: column;
-      align-items: start;
-      gap: 4px;
-    }
+  align-items: center;
+  @media (max-width: $mantine-breakpoint-md) {
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
   }
+}
 .new-transfer {
-    width: 60%;
-    @media (max-width: $mantine-breakpoint-md) {
-        width: 100%;
-    }
+  width: 60%;
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
   }
+}
+
+.header {
+  width: 100%;
+  height: 190px;
+  justify-content: end;
+  align-items: start;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
+    height: auto;
+  }
+}
+.header-description {
+  align-items: end;
+  justify-content: space-between;
+  @media (max-width: $mantine-breakpoint-md) {
+    align-items: center;
+  }
+}
+.header-description-text {
+  max-width: 50%;
+  @media (max-width: $mantine-breakpoint-md) {
+    max-width: 100%;
+  }
+}
+
+.user-card {
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  width: 400px;
+  height: 200px;
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
+    height: 100%;
+  }
+}
+.user-card-paper {
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
+    padding-block: 10px;
+  }
+}

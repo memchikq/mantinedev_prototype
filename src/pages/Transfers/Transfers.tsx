@@ -24,18 +24,14 @@ const Transfers = () => {
           <Paper className="bg_img" shadow="sm" radius="md" withBorder>
             <Flex
               p={"md"}
-              style={{
-                width: "100%",
-                height: "190px",
-              }}
+              
               direction={"column"}
               gap={"md"}
-              justify={"end"}
-              align={"start"}
+              className="header"
             >
               <Text size="30px">Transfers</Text>
-              <Flex w={"100%"} align={"end"} justify={"space-between"}>
-                <Text size="md" maw={"50%"}>
+              <Flex className="flex-col header-description" w={"100%"} >
+                <Text size="md" className="header-description-text">
                   Use all the possibilities of our products to make your business more efficient and profitable
                 </Text>
                 <Button onClick={() => navigate("/new-transfer")} px={"60px"} size="xl">
