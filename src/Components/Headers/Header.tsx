@@ -57,6 +57,11 @@ const Header = () => {
       <Drawer
         opened={opened}
         onClose={close}
+        styles={{
+          header:{
+            marginTop:"30px"
+          }
+        }}
         title={
           <BackgroundImage ml={14} src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png" radius="sm">
             <Box w={100} h={50}></Box>
