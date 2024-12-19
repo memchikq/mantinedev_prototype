@@ -1,5 +1,5 @@
 import Header from "../../Components/Headers/Header"
-import { Badge, Button, Card, Container, Flex, Group, Image, Paper, Text } from "@mantine/core"
+import { Badge, Button, Card, Container, Flex, Group, Image, Paper, Text, Title } from "@mantine/core"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 
 const AddNewProduct = () => {
@@ -30,9 +30,9 @@ const AddNewProduct = () => {
           </Paper>
           <Flex w={"100%"} gap={"md"}>
             <Card flex={1} shadow="sm" padding="lg" radius="md" withBorder>
-              <Text ta={"center"} size="xl" fw={500}>
+              <Title ta={"center"} style={{ textTransform: "uppercase" }}  order={5}>
                 Insurance
-              </Text>
+              </Title>
 
               <Card.Section p={10}>
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
@@ -47,9 +47,9 @@ const AddNewProduct = () => {
               </Button>
             </Card>
             <Card flex={1} shadow="sm" padding="lg" radius="md" withBorder>
-              <Text ta={"center"} size="xl" fw={500}>
+            <Title ta={"center"} style={{ textTransform: "uppercase" }}  order={5}>
                 Insurance
-              </Text>
+              </Title>
 
               <Card.Section p={10}>
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
@@ -64,9 +64,9 @@ const AddNewProduct = () => {
               </Button>
             </Card>
             <Card flex={1} shadow="sm" padding="lg" radius="md" withBorder>
-              <Text ta={"center"} size="xl" fw={500}>
+            <Title ta={"center"} style={{ textTransform: "uppercase" }} order={5}>
                 Insurance
-              </Text>
+              </Title>
 
               <Card.Section p={10}>
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
