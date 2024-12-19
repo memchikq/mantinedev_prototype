@@ -59,11 +59,11 @@ const Header = () => {
         onClose={close}
         styles={{
           header:{
-            marginTop:"30px"
+            alignItems:"start"
           }
         }}
         title={
-          <BackgroundImage ml={14} src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png" radius="sm">
+          <BackgroundImage mt={30} ml={14} src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png" radius="sm">
             <Box w={100} h={50}></Box>
           </BackgroundImage>
         }
