@@ -57,38 +57,40 @@ const Transfer = () => {
                   </Paper>
                 </Flex>
                 <Flex direction={"column"}>
-                  <Paper flex={1}  h={"100%"} radius={"md"} >
+                  <Paper flex={1} h={"100%"} radius={"md"}>
                     <Flex flex={1} direction={"column"} gap={"md"} justify={"center"} align={"center"} p={"md"}>
                       <img style={{ width: "180px", height: "180px" }} src="/icons/qr.png" />
                       <Text>PIN: 2467</Text>
                       <Text>Use PIN or QR code to receive the transfer</Text>
                     </Flex>
+
+                    <Flex mt={"md"}>
+                      <Flex flex={1} direction={"column"} >
+                          <Divider />
+                        <Flex flex={1} justify={"flex-end"} align={"center"}>
+                          <Flex gap={"md"} align={"center"} flex={1}>
+                            <NavLink
+                              label="Download receipt"
+                              p={"md"}
+                              rightSection={<FaChevronRight size={20} />}
+                              leftSection={<FaCloudDownloadAlt size={20} />}
+                            />
+                          </Flex>
+                        </Flex>
+                          <Divider />
+                        <Flex flex={1} align={"center"}>
+                          <Flex gap={"md"} align={"center"} flex={1}>
+                            <NavLink
+                              label="Download receipt"
+                              p={"md"}
+                              rightSection={<FaChevronRight size={20} />}
+                              leftSection={<FaQuestion size={20} />}
+                            />
+                          </Flex>
+                        </Flex>
+                      </Flex>
+                    </Flex>
                   </Paper>
-                </Flex>
-              </Flex>
-              <Flex mt={"xl"}>
-                <Flex flex={2.5} direction={"column"} align={"flex-end"}></Flex>
-                <Flex w={335} direction={"column"} gap={"md"}>
-                  <Divider />
-                  <Flex flex={1} justify={"flex-end"} align={"center"}>
-                    <Flex gap={"md"} align={"center"} flex={1}>
-                      <NavLink
-                        label="Download receipt"
-                        rightSection={<FaChevronRight size={20} />}
-                        leftSection={<FaCloudDownloadAlt size={20} />}
-                      />
-                    </Flex>
-                  </Flex>
-                  <Divider />
-                  <Flex flex={1} justify={"flex-end"} align={"center"}>
-                    <Flex gap={"md"} align={"center"} flex={1}>
-                      <NavLink
-                        label="Download receipt"
-                        rightSection={<FaChevronRight size={20} />}
-                        leftSection={<FaQuestion size={20} />}
-                      />
-                    </Flex>
-                  </Flex>
                 </Flex>
               </Flex>
             </Flex>

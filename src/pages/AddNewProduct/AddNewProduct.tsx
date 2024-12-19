@@ -29,7 +29,7 @@ const AddNewProduct = () => {
             </Flex>
           </Paper>
           <Flex w={"100%"} gap={"md"}>
-            <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Card flex={1} shadow="sm" padding="lg" radius="md" withBorder>
               <Text ta={"center"} size="xl" fw={500}>
                 Insurance
               </Text>
@@ -46,7 +46,7 @@ const AddNewProduct = () => {
                 Add service
               </Button>
             </Card>
-            <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Card flex={1} shadow="sm" padding="lg" radius="md" withBorder>
               <Text ta={"center"} size="xl" fw={500}>
                 Insurance
               </Text>
@@ -63,7 +63,7 @@ const AddNewProduct = () => {
                 Add service
               </Button>
             </Card>
-            <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Card flex={1} shadow="sm" padding="lg" radius="md" withBorder>
               <Text ta={"center"} size="xl" fw={500}>
                 Insurance
               </Text>

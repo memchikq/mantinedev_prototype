@@ -37,12 +37,12 @@ const NewTransfer = () => {
   const [selectedTo, setSelectedTo] = useState(data[0])
   const itemsFrom = data.map((item) => (
     <Menu.Item onClick={() => setSelectedFrom(item)} key={item.label}>
-      {item.image}
+      {item.image}  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, corporis.
     </Menu.Item>
   ))
   const itemsTo = data.map((item) => (
     <Menu.Item onClick={() => setSelectedTo(item)} key={item.label}>
-      {item.image}
+      {item.image}  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, corporis.
     </Menu.Item>
   ))
   return (
@@ -78,7 +78,7 @@ const NewTransfer = () => {
                         onClose={() => setOpenedTo(false)}
                         styles={{
                           dropdown: {
-                            minWidth: "100px",
+                            minWidth: "500px",
                           },
                         }}
                         radius="md"
@@ -103,7 +103,7 @@ const NewTransfer = () => {
                     size="xl"
                     styles={{
                       input: {
-                        fontSize: "16px",
+                        minWidth: "500px",
                       },
                     }}
                     mr={"md"}
@@ -113,7 +113,7 @@ const NewTransfer = () => {
                         onClose={() => setOpenedFrom(false)}
                         styles={{
                           dropdown: {
-                            minWidth: "100px",
+                            minWidth: "500px",
                           },
                         }}
                         radius="md"
@@ -122,7 +122,7 @@ const NewTransfer = () => {
                         <Menu.Target>
                           <UnstyledButton className={classes.control} data-expanded={openedFrom || undefined}>
                             <Flex gap="xs" w={80}>
-                              <span className={classes.label}>{selectedFrom.currency}</span>
+                              <span className={classes.label}>{selectedFrom.currency} </span>
                               <>{selectedFrom.image}</>
                             </Flex>
                           </UnstyledButton>

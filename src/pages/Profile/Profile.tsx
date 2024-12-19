@@ -1,4 +1,4 @@
-import { Avatar, BackgroundImage, Button, Card, Container, Divider, Flex, Group, Image, NavLink, Paper, Text, Title } from "@mantine/core"
+import { Avatar, BackgroundImage, Button, Card, Container, Divider, Flex, Group, Image, NavLink, Paper, Space, Text, Title } from "@mantine/core"
 import Header from "../../Components/Headers/Header"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 import { IoIosNotifications } from "react-icons/io"
@@ -87,7 +87,7 @@ const Profile = () => {
       <Title order={5} style={{ textTransform: "uppercase" }}>
         {item.label}
       </Title>
-
+      <Space h={"md"}/>
       {item.links.map((v, i) => (
         <>
         <Divider />
