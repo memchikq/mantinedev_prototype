@@ -2,6 +2,7 @@ import { BackgroundImage, Button, Container, Divider, Flex, Input, Paper, Space,
 import Header from "../../Components/Headers/Header"
 import UserMenu from "../../Components/UserMenu/UserMenu"
 import { useNavigate } from "react-router-dom"
+import { CiFilter } from "react-icons/ci"
 
 const data = [
   { date: "20 Jan 2024", name: "Ruslan Bakiev", description: "Sending from individual bank account in Russia", sum: "5'000", type: "$" },
@@ -41,7 +42,7 @@ const Transfers = () => {
               </Flex>
             </Flex>
           </Paper>
-          <Input placeholder="Search" styles={{input:{fontSize:"16px"}}} size="lg" rightSection={<img src="/icons/filter.png" />} />
+          <Input placeholder="Search" styles={{input:{fontSize:"16px"}}} size="lg" rightSection={<CiFilter size={22} />} />
           <Flex direction={"column"} gap={"xl"}>
             <Flex  onClick={() => navigate("/transfer")} style={{ cursor: "pointer" }} direction={"column"}>
               <Title order={5} style={{ textTransform: "uppercase" }}>
