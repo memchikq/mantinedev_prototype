@@ -34,6 +34,7 @@ const Transfers = () => {
                 <Text size="md" className="header-description-text">
                   Use all the possibilities of our products to make your business more efficient and profitable
                 </Text>
+                <Space h={"md"} hiddenFrom="md"/>
                 <Button onClick={() => navigate("/new-transfer")} px={"60px"} size="xl">
                   New transfer
                 </Button>

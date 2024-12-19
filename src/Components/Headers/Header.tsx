@@ -1,5 +1,5 @@
 import { Avatar, BackgroundImage, Box, Burger, Drawer, Flex, Group, Indicator, Space, Text, UnstyledButton } from "@mantine/core"
-import { FaChevronRight, FaPlus, FaRegMoneyBillAlt } from "react-icons/fa"
+import { FaChevronRight, FaPlus } from "react-icons/fa"
 import { Link, useNavigate } from "react-router-dom"
 import classes from "./Header.module.css"
 import { useDisclosure } from "@mantine/hooks"
@@ -58,11 +58,9 @@ const Header = () => {
         opened={opened}
         onClose={close}
         title={
-        
-            <Box w={170} h={50}>
-              <FaRegMoneyBillAlt  size={40}/>
-            </Box>
-          
+          <BackgroundImage ml={14} src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png" radius="sm">
+            <Box w={100} h={50}></Box>
+          </BackgroundImage>
         }
       >
         <div className={classes.navbarMain}>{links}</div>

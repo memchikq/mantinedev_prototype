@@ -19,7 +19,7 @@ const AddNewProduct = () => {
             </Flex>
           </Paper>
           <Grid grow>
-            <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+            <Grid.Col span={{ base: 3, md: 6, lg: 3 }}>
               <Card w={"100%"} flex={1} style={{ flexShrink: 0 }} shadow="sm" padding="lg" radius="md" withBorder>
                 <Text ta={"center"} size="xl" fw={500}>
                   Insurance
@@ -42,7 +42,7 @@ const AddNewProduct = () => {
                 </Button>
               </Card>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+            <Grid.Col span={{ base: 3, md: 6, lg: 3 }}>
               <Card flex={1} shadow="sm" padding="lg" style={{ flexShrink: 0 }} radius="md" withBorder>
                 <Text ta={"center"} size="xl" fw={500}>
                   Insurance
@@ -65,7 +65,7 @@ const AddNewProduct = () => {
                 </Button>
               </Card>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+            <Grid.Col span={{ base: 3, md: 6, lg: 3 }}>
             <Card flex={1} shadow="sm" padding="lg" style={{ flexShrink: 0 }} radius="md" withBorder>
               <Text ta={"center"} size="xl" fw={500}>
                 Insurance
