@@ -1,5 +1,5 @@
 import { Avatar, BackgroundImage, Box, Burger, Drawer, Flex, Group, Indicator, Space, Text, UnstyledButton } from "@mantine/core"
-import { FaChevronRight, FaPlus } from "react-icons/fa"
+import { FaChevronRight, FaPlus, FaRegMoneyBillAlt } from "react-icons/fa"
 import { Link, useNavigate } from "react-router-dom"
 import classes from "./Header.module.css"
 import { useDisclosure } from "@mantine/hooks"
@@ -19,8 +19,8 @@ const tabs = [
 const Header = () => {
   const navigate = useNavigate()
   const [opened, { toggle, close }] = useDisclosure()
-  const links = tabs.map((item,i) => (
-    <Link style={{marginTop:i == tabs.length -1 ? "40px":""}} className={classes.link} to={item.link} key={item.label}>
+  const links = tabs.map((item, i) => (
+    <Link style={{ marginTop: i == tabs.length - 1 ? "40px" : "" }} className={classes.link} to={item.link} key={item.label}>
       <item.icon className={classes.linkIcon} />
       <span>{item.label}</span>
     </Link>
@@ -48,11 +48,23 @@ const Header = () => {
               </Text>
             </div>
 
-            <Box visibleFrom="md"><FaChevronRight size={14} /></Box>
+            <Box visibleFrom="md">
+              <FaChevronRight size={14} />
+            </Box>
           </Flex>
         </UnstyledButton>
       </Flex>
-      <Drawer opened={opened} onClose={close} title='Menu'>
+      <Drawer
+        opened={opened}
+        onClose={close}
+        title={
+        
+            <Box w={170} h={50}>
+              <FaRegMoneyBillAlt  size={40}/>
+            </Box>
+          
+        }
+      >
         <div className={classes.navbarMain}>{links}</div>
       </Drawer>
     </header>
