@@ -18,7 +18,9 @@ const Transfer = () => {
               <Stepper.Step icon={<></>} label="Created" description="2024.12.01 10:30 "></Stepper.Step>
               <Stepper.Step icon={<></>} label="Accepted payment" description="2024.12.01 10:30"></Stepper.Step>
               <Stepper.Step icon={<></>} label="Ready to be issued " description="2024.12.01 10:32"></Stepper.Step>
-              <Stepper.Step icon={<></>} label="Issued">Issued</Stepper.Step>
+              <Stepper.Step icon={<></>} label="Issued">
+                Issued
+              </Stepper.Step>
             </Stepper>
 
             <Flex flex={1} direction={"column"} justify={"center"}>
@@ -31,7 +33,9 @@ const Transfer = () => {
                       </Title>
                       <Text size="md">RUSLAN BAKIEV</Text>
                       <Flex gap={"sm"} align={"center"}>
-                        <Text fw={600} size="xl">5'000 USD</Text>
+                        <Text fw={600} size="xl">
+                          5'000 USD
+                        </Text>
                         <span className="fi fi-us"></span>
                       </Flex>
                       <Text>Sending from individual bank account in Russia</Text>
@@ -43,7 +47,9 @@ const Transfer = () => {
                       </Title>
                       <Text size="md">RUSLAN BAKIEV</Text>
                       <Flex gap={"sm"} align={"center"}>
-                        <Text fw={600} size="xl">5'000 USD</Text>
+                        <Text fw={600} size="xl">
+                          5'000 USD
+                        </Text>
                         <span className="fi fi-us"></span>
                       </Flex>
                       <Text>Sending from individual bank account in Russia</Text>
@@ -51,7 +57,7 @@ const Transfer = () => {
                   </Paper>
                 </Flex>
                 <Flex direction={"column"}>
-                  <Paper flex={1} shadow="sm" h={"100%"} radius={"md"} withBorder>
+                  <Paper flex={1}  h={"100%"} radius={"md"} >
                     <Flex flex={1} direction={"column"} gap={"md"} justify={"center"} align={"center"} p={"md"}>
                       <img style={{ width: "180px", height: "180px" }} src="/icons/qr.png" />
                       <Text>PIN: 2467</Text>
@@ -63,6 +69,7 @@ const Transfer = () => {
               <Flex mt={"xl"}>
                 <Flex flex={2.5} direction={"column"} align={"flex-end"}></Flex>
                 <Flex w={335} direction={"column"} gap={"md"}>
+                  <Divider />
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
                       <NavLink
@@ -72,6 +79,7 @@ const Transfer = () => {
                       />
                     </Flex>
                   </Flex>
+                  <Divider />
                   <Flex flex={1} justify={"flex-end"} align={"center"}>
                     <Flex gap={"md"} align={"center"} flex={1}>
                       <NavLink

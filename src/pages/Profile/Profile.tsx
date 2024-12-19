@@ -90,6 +90,7 @@ const Profile = () => {
 
       {item.links.map((v, i) => (
         <>
+        <Divider />
           <NavLink
             key={i}
             label={
@@ -102,7 +103,7 @@ const Profile = () => {
             rightSection={<FaChevronRight />}
             leftSection={<v.icon className={classes.linkIcon} />}
           ></NavLink>
-          <Divider/>
+          
         </>
       ))}
     </div>

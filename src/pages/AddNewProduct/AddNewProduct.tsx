@@ -20,10 +20,10 @@ const AddNewProduct = () => {
               justify={"end"}
               align={"start"}
             >
-              <Text size="30px" fw={555}>
+              <Text  size="30px" >
                 Products
               </Text>
-              <Text fw={500} size="md" ta={"center"}>
+              <Text size="md" ta={"center"}>
                 Use all the possibilities of our products to make your business more efficient and profitable
               </Text>
             </Flex>
