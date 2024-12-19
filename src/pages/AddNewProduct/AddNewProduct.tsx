@@ -38,7 +38,7 @@ const AddNewProduct = () => {
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
               </Card.Section>
 
-              <Text size="sm" c="dimmed">
+              <Text size="md" ta={"center"} >
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
 
@@ -55,7 +55,7 @@ const AddNewProduct = () => {
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
               </Card.Section>
 
-              <Text size="sm" c="dimmed">
+              <Text size="md" ta={"center"} >
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
 
@@ -72,7 +72,7 @@ const AddNewProduct = () => {
                 <Image src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png" height={160} alt="Norway" />
               </Card.Section>
 
-              <Text size="sm" c="dimmed">
+              <Text size="md" ta={"center"} >
                 Try supply chain insurance with coverage up to $10,000,000
               </Text>
 
