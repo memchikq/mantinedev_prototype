@@ -78,7 +78,7 @@ const NewTransfer = () => {
                         onClose={() => setOpenedTo(false)}
                         styles={{
                           dropdown: {
-                            minWidth: "500px",
+                            minWidth: "60%",
                           },
                         }}
                         radius="md"
@@ -108,7 +108,8 @@ const NewTransfer = () => {
                         onClose={() => setOpenedFrom(false)}
                         styles={{
                           dropdown: {
-                            minWidth: "500px",
+                            minWidth: "60%",
+                            
                           },
                         }}
                         radius="md"
