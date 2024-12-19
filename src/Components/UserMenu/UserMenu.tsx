@@ -10,7 +10,7 @@ import { FaPlus } from "react-icons/fa"
 const UserMenu = () => {
   const navigate = useNavigate()
   return (
-    <div>
+    <div style={{flex:1}}>
       <NavLink onClick={() => navigate("/")} label={<Text size="16px">Transfers</Text>} leftSection={<IoLogoUsd />} />
       <NavLink label={<Text size="16px">Insurance</Text>} leftSection={<CiUmbrella />} />
       <NavLink label={<Text size="16px">Smart contracts</Text>} leftSection={<MdOutlineSecurity />} />
